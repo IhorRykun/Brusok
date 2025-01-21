@@ -1,30 +1,79 @@
 .header {
-  padding: 20px 0;
+  padding-top: 15px;
 }
-
-.nav-list {
+.nav {
+  border: 1px solid black;
+  border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
+  padding-right: 22px;
 
-  @include media(tablet) {
-    justify-content: flex-start;
+  &-logo {
+    margin: 12px 0 12px 12px;
+    width: 68px;
+    height: 60px;
+  }
+  &-list {
+    display: flex;
+    margin-left: 355px;
+  }
+  &-item {
+    margin-left: 30px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &-link {
+      padding: 4px;
+    }
+  }
+  &-form {
+    display: block;
+    position: relative;
   }
 
-  @include media(desktop) {
-    justify-content: flex-end;
+  &-input {
+    border-radius: 25px;
+    width: 138px;
+    height: 40px;
+    margin-right: 9px;
+    padding-left: 42px;
+  }
+
+  &-btn {
+    width: 19px;
+    height: 21px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 120px;
+    background-color: transparent;
+    border: none;
+  }
+
+  &-tel {
+    width: 42px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-basket {
+    width: 42px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9px;
   }
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: $_header_accent_color;
+.nav-container-right {
+  display: flex;
+  margin-left: auto;
 }

@@ -1,36 +1,47 @@
 <header class="header">
- <nav class="nav">
-  <img class="logo" src="../img/nav/logo.png" alt="logo">
-  <ul class="nav-list">
-   <li class="nav-item">
-    <a href="">
-     Про нас
+ <div class="container">
+  <nav class="nav">
+   <a href="./index.html"><img class="nav-logo" src="./img/nav/logo.png" alt="logo"></a>
+   <ul class="nav-list">
+    <li class="nav-item">
+     <a class="nav-item-link" href="">
+      Про нас
+     </a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-item-link" href="">
+      Покрівельні роботи
+     </a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-item-link" href="">
+      Пиломатеріали
+     </a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-item-link" href="">
+      Логістичні послуги
+     </a>
+    </li>
+   </ul>
+   <div class="nav-container-right">
+    <form class="nav-form">
+     <input class="nav-input" type="text" name="search" placeholder="search">
+     <button class="nav-btn">
+      <svg width="19" height="21">
+       <use href="../img/sprite.svg#search"></use>
+      </svg>
+     </button>
+    </form>
+    <a href="tel:0977728371" class="nav-tel">
+     <svg width="15" height="15">
+      <use href="./img/sprite.svg#mobile"></use>
+     </svg>
     </a>
-   </li>
-   <li class="nav-item">
-    <a href="">
-     Покрівельні роботи
-    </a>
-   </li>
-   <li class="nav-item">
-    <a href="">
-     Пиломатеріали
-    </a>
-   </li>
-   <li class="nav-item">
-    <a href="">
-     Логістичні послуги
-    </a>
-   </li>
-  </ul>
-  <input type="text">
-  <a href="" class="nav_tel">
-   <svg width="15" height="15">
-    <use href="../img/sprite.svg#mobile"></use>
-   </svg>
-  </a>
-  <a href="" class="nav_basket"> <svg width="15" height="15">
-    <use href="../img/sprite.svg#basket"></use>
-   </svg></a>
- </nav>
+    <a href="" class="nav-basket"> <svg width="15" height="15">
+      <use href="./img/sprite.svg#basket"></use>
+     </svg></a>
+   </div>
+  </nav>
+ </div>
 </header>
