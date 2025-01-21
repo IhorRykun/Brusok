@@ -52,6 +52,7 @@ export default defineConfig(({ command }) => {
           additionalData: globalStylesOptions,
         },
       },
-    },
+   },
+    base: "Brusok"
   };
 });
