@@ -1,6 +1,10 @@
+@import './common/reset';
+@import './common/mixins';
+@import './common/vars';
+@import './common/base-style';
 @import './header.scss';
 @import './main.scss';
-
+@import './service.scss';
 
 :root {
   font-family: 'Sue Ellen Francisco', serif;
